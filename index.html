@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Freecode Camp Survey Page</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Neuton:700" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+      <h1 id="title">Survey Form</h1>
+      <div id="outer-form">
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+      
+      
+      <form id="survey-form">
+        
+        <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" class="leftTab">* Name:</label>
+          </div>
+          <div class="rightTab">
+            <input id="name" class="input-field" type="text" name="name" placeholder="Enter your name"/>
+          </div>
+        </div>
+
+
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" class="leftTab">* Email:</label>
+          </div>
+          <div class="rightTab">
+            <input id="email" class="input-field" type="email" name="email" placeholder="Enter your Email"/>
+          </div>
+        </div>
+
+
+        <div class="rowTab">
+          <div class="labels">
+            <label id="number-label" class="leftTab">* Age:</label>
+          </div>
+          <div class="rightTab">
+            <input id="number" class="input-field" type="number" name="age" min="1" max="105" placeholder="Age">
+          </div>
+        </div>
+
+        <div class="rowTab">
+          <div class="labels">
+            <label class="leftTab">Which option best describes your current role?</label>
+          </div>
+          <div class="rightTab">
+            <select id="dropdown">
+              <option disabled value>Select an Option</option>
+              <option value="Student">Student</option>
+              <option value="Full Time Job">Full Time Job</option>
+              <option value="Full Time Learner">Full Time Learner</option>
+              <option value="Prefer Not To Say">Prefer Not to Say</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="rowTab">
+          <div class="labels">
+            <label class="leftTab">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+          </div>
+          <div class="rightTab">
+            <li><input type="radio" name="recommendation" value="Definitely"><label> Definitely</label></li>
+            <li><input type="radio" name="recommendation" value="Maybe"><label> Maybe</label></li>
+            <li><input type="radio" name="recommendation" value="Not Sure"><label> Not Sure</label></li>
+          </div>
+        </div>
+
+
+
+        <div class="rowTab">
+          <div class="labels">
+            <label class="leftTab">What do you like most in FCC:</label>
+          </div>
+          <div class="rightTab">
+            <select id="dropdown">
+              <option disabled value>Select an Option</option>
+              <option name="likemostFCC" value="challenges">Challenges</option>
+              <option name="likemostFCC" value="project">Project</option>
+              <option name="likemostFCC" value="opensource">Open Source</option>
+              <option name="likemostFCC" value="community">Community</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="rowTab">
+          <div class="labels" id="specialRow">
+            <label class="leftTab">Things that should be improved in the future (Check all the apply):</label>
+          </div>
+          <div class="rightTab">
+            <li><input type="checkbox" name="improvements" value="Front-end Projects"><label>Front-end Projects</label></li>
+            <li><input type="checkbox" name="improvements" value="Back-end Projects"><label>Back-end Projects</label></li>
+            <li><input type="checkbox" name="improvements" value="Data Visualization"><label>Data Visualization</label></li>
+            <li><input type="checkbox" name="improvements" value="Challenges"><label>Challenges</label></li>
+            <li><input type="checkbox" name="improvements" value="Open Source Community"><label>Open Source Community</label></li>
+            <li><input type="checkbox" name="improvements" value="Gitter help rooms"><label>Gitter help rooms</label></li>
+            <li><input type="checkbox" name="improvements" value="Videos"><label>Videos</label></li>
+            <li><input type="checkbox" name="improvements" value="City Meetups"><label>City Meetups</label></li>
+            <li><input type="checkbox" name="improvements" value="Wiki"><label>Wiki</label></li>
+            <li><input type="checkbox" name="improvements" value="Forum"><label>Forum</label></li>
+            <li><input type="checkbox" name="improvements" value="Additional Courses"><label>Additional Courses</label></li>
+          </div>
+        </div>
+
+
+        <div class="rowTab">
+          <div class="labels">
+            <label class="leftTab">Any comments or Suggestions?</label>
+          </div>
+          <div class="rightTab">
+            <textarea name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+        </div>
+
+
+        <div class="rowTab">
+          <input id="submit" type="submit" value="Submit"/>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</body>
+</html>
